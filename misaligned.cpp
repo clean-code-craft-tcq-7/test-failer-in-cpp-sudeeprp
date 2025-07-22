@@ -2,7 +2,7 @@
 #include <assert.h>
 
 int pair_number(int i, int j) {
-    return i * 5 + j;
+    return i * 5 + j + 1; // Adjusted to match 1-based indexing
 }
 
 int printColorMap() {
