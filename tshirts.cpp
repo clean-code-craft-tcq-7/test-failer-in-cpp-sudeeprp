@@ -3,14 +3,14 @@
 
 char size(int cms) {
     char sizeName = '\0';
-    if(cms < 38) {
+    if(cms <= 38) {
         sizeName = 'S';
-    } else if(cms > 38 && cms < 42) {
+    } else if(cms <= 42) {
         sizeName = 'M';
-    } else if(cms > 42) {
+    } else {
         sizeName = 'L';
-    } // PROBLEM: No else here
-    return sizeName; // PROBLEM: null character for size 38
+    }
+    return sizeName;
 }
 
 void testTshirtSize() {
